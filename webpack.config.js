@@ -11,6 +11,7 @@ var config = {
   output: {
     path: __dirname + '/lib',
     filename: outputFile,
+    library: 'XLSX_CALC_ASYNC',
     libraryTarget: "umd",
     globalObject: 'this'
   }
