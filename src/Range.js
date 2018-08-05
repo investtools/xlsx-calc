@@ -6,7 +6,9 @@ const getSanitizedSheetName = require('./getSanitizedSheetName.js');
 
 module.exports = function Range(str_expression, formula) {
     
+    this.name = 'Range';
     this.str_expression = str_expression;
+    this.formula = formula;
     
     function promiseInSeq(sheet, matrix, min_row, max_row, min_col, max_col, sheet_name, resolve, reject, _row) {
         //console.log('min_row =', min_row, 'max_row =', max_row);
